@@ -18,6 +18,7 @@
 		2B0AC417283031B90054025C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0AC416283031B90054025C /* Preview Assets.xcassets */; };
 		2B0AC41E283032DB0054025C /* LeftTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0AC41D283032DB0054025C /* LeftTopView.swift */; };
 		2B56D4272831681200650FFB /* LeftEyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D4262831681200650FFB /* LeftEyeView.swift */; };
+		2B56D42928317FC900650FFB /* RightEyeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D42828317FC900650FFB /* RightEyeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		2B0AC416283031B90054025C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B0AC41D283032DB0054025C /* LeftTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftTopView.swift; sourceTree = "<group>"; };
 		2B56D4262831681200650FFB /* LeftEyeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftEyeView.swift; sourceTree = "<group>"; };
+		2B56D42828317FC900650FFB /* RightEyeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightEyeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				2B092B5C283144CF0077038C /* LeftBoundAndEarView.swift */,
 				2B092B5E283159D70077038C /* RightBoundAndEarView.swift */,
 				2B56D4262831681200650FFB /* LeftEyeView.swift */,
+				2B56D42828317FC900650FFB /* RightEyeView.swift */,
 				2B0AC413283031B90054025C /* Assets.xcassets */,
 				2B0AC415283031B90054025C /* Preview Content */,
 			);
@@ -161,6 +164,7 @@
 				2B56D4272831681200650FFB /* LeftEyeView.swift in Sources */,
 				2B092B59283128F30077038C /* LeftFillShapeTopView.swift in Sources */,
 				2B092B5F283159D70077038C /* RightBoundAndEarView.swift in Sources */,
+				2B56D42928317FC900650FFB /* RightEyeView.swift in Sources */,
 				2B0AC41E283032DB0054025C /* LeftTopView.swift in Sources */,
 				2B092B57283125BB0077038C /* RightTopView.swift in Sources */,
 				2B0AC412283031B70054025C /* ContentView.swift in Sources */,
