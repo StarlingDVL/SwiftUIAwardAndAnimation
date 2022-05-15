@@ -11,115 +11,65 @@ struct CenterTopView: View {
     var body: some View {
         GeometryReader { geometry in
             let width = geometry.size.width
-            let heigh = width * 1.1
-            let size = min(width, heigh)
+            let height = geometry.size.height
             
-            let middleH = width / 2
-            let middleV = heigh / 2
+            let gridX = CGFloat(300)
+            let gridY = CGFloat(350)
             
-            let topBoardMiddle = size * 0.3
+            let stepX = width / gridX
+            let stepY = height / gridY
             
-            // Central triangle of top part
-            Group {
-                Path { path in
-                    path.move(to: CGPoint(x: middleH, y: size * 0.01))
-                    path.addLine(to: CGPoint(x: size * 0.65, y: size * 0.02))
-                    path.addLine(to: CGPoint(x: size * 0.6, y: size * 0.1))
-                    path.addLine(to: CGPoint(x: middleH, y: size * 0.07))
-                    path.addLine(to: CGPoint(x: middleH, y: size * 0.01))
-                    path.addLine(to: CGPoint(x: size * 0.35, y: size * 0.02))
-                    path.addLine(to: CGPoint(x: size * 0.4, y: size * 0.1))
-                    path.addLine(to: CGPoint(x: middleH, y: size * 0.07))
-                    path.addLine(to: CGPoint(x: size * 0.47, y: size * 0.22))
-                    path.addLine(to: CGPoint(x: middleH, y: topBoardMiddle))
-                    path.addLine(to: CGPoint(x: size * 0.53, y: size * 0.22))
-                    path.addLine(to: CGPoint(x: middleH, y: size * 0.07))
-                }
-                .stroke()
+            
+            let middleHorizontal = width / 2
+            
+            Path { path in
+                path.move(to: CGPoint(x: middleHorizontal, y: stepY * 10))
+                path.addLine(to: CGPoint(x: middleHorizontal, y: stepY * 30))
+                path.addLine(to: CGPoint(x: stepX * 110, y: stepY * 35))
+                path.addLine(to: CGPoint(x: stepX * 100, y: stepY * 15))
+                path.addLine(to: CGPoint(x: middleHorizontal, y: stepY * 10))
                 
-                // Second part of top
-                Group {
-                    Path { path in
-                        path.move(to: CGPoint(x: size * 0.35, y: size * 0.02))
-                        path.addLine(to: CGPoint(x: size * 0.31, y: size * 0.03))
-                        path.addLine(to: CGPoint(x: size * 0.29, y: size * 0.12))
-                        path.addLine(to: CGPoint(x: size * 0.3, y: size * 0.13))
-                        path.addLine(to: CGPoint(x: size * 0.4, y: size * 0.1))
-                        path.addLine(to: CGPoint(x: size * 0.47, y: size * 0.22))
-                        path.addLine(to: CGPoint(x: size * 0.31, y: topBoardMiddle))
-                        path.addLine(to: CGPoint(x: middleH, y: topBoardMiddle))
-                    }
-                    .stroke()
-                    
-                    Path { path in
-                        path.move(to: CGPoint(x: size * 0.65, y: size * 0.02))
-                        path.addLine(to: CGPoint(x: size * 0.69, y: size * 0.03))
-                        path.addLine(to: CGPoint(x: size * 0.71, y: size * 0.12))
-                        path.addLine(to: CGPoint(x: size * 0.7, y: size * 0.13))
-                        path.addLine(to: CGPoint(x: size * 0.6, y: size * 0.1))
-                        path.addLine(to: CGPoint(x: size * 0.53, y: size * 0.22))
-                        path.addLine(to: CGPoint(x: size * 0.69, y: topBoardMiddle))
-                        path.addLine(to: CGPoint(x: middleH, y: topBoardMiddle))
-                    }
-                    .stroke()
-                    
-                    Path { path in
-                        path.move(to: CGPoint(x: size * 0.31, y: size * 0.03 ))
-                        path.addLine(to: CGPoint(x: size * 0.27, y: size * 0.042))
-                        path.addLine(to: CGPoint(x: size * 0.24, y: size * 0.1))
-                        path.addLine(to: CGPoint(x: size * 0.29, y: size * 0.12))
-                        path.addLine(to: CGPoint(x: size * 0.23, y: size * 0.14))
-                        path.addLine(to: CGPoint(x: size * 0.24, y: size * 0.1))
-                        path.addLine(to: CGPoint(x: size * 0.22, y: size * 0.11))
-                        path.addLine(to: CGPoint(x: size * 0.20, y: size * 0.09))
-                        path.addLine(to: CGPoint(x: size * 0.27, y: size * 0.042))
-                        
-                    }
-                    .stroke()
-                    
-                    Path { path in
-                        path.move(to: CGPoint(x: size * 0.69, y: size * 0.03 ))
-                        path.addLine(to: CGPoint(x: size * 0.73, y: size * 0.042))
-                        path.addLine(to: CGPoint(x: size * 0.76, y: size * 0.1))
-                        path.addLine(to: CGPoint(x: size * 0.71, y: size * 0.12))
-                        path.addLine(to: CGPoint(x: size * 0.77, y: size * 0.14))
-                        path.addLine(to: CGPoint(x: size * 0.76, y: size * 0.1))
-                        path.addLine(to: CGPoint(x: size * 0.78, y: size * 0.11))
-                        path.addLine(to: CGPoint(x: size * 0.80, y: size * 0.09))
-                        path.addLine(to: CGPoint(x: size * 0.73, y: size * 0.042))
-                        
-                    }
-                    .stroke()
-                    
-                    Path { path in
-                        path.move(to: CGPoint(x: size * 0.20, y: size * 0.09 ))
-                        path.addLine(to: CGPoint(x: size * 0.17, y: size * 0.14))
-                        path.addLine(to: CGPoint(x: size * 0.22, y: size * 0.11))
-                        path.addLine(to: CGPoint(x: size * 0.19, y: size * 0.15))
-                        path.addLine(to: CGPoint(x: size * 0.23, y: size * 0.14))
-                        path.addLine(to: CGPoint(x: size * 0.3, y: size * 0.13))
-                        path.addLine(to: CGPoint(x: size * 0.28, y: size * 0.24))
-                        path.addLine(to: CGPoint(x: size * 0.4, y: size * 0.1))
-                    }
-                    .stroke()
-                    
-                    Path { path in
-                        path.move(to: CGPoint(x: size * 0.80, y: size * 0.09 ))
-                        path.addLine(to: CGPoint(x: size * 0.83, y: size * 0.14))
-                        path.addLine(to: CGPoint(x: size * 0.78, y: size * 0.11))
-                        path.addLine(to: CGPoint(x: size * 0.81, y: size * 0.15))
-                        path.addLine(to: CGPoint(x: size * 0.77, y: size * 0.14))
-                        path.addLine(to: CGPoint(x: size * 0.7, y: size * 0.13))
-                        path.addLine(to: CGPoint(x: size * 0.72, y: size * 0.24))
-                        path.addLine(to: CGPoint(x: size * 0.6, y: size * 0.1))
-                    }
-                    .stroke()
-                }
+                path.addLine(to: CGPoint(x: stepX * 200, y: stepY * 15))
+                path.addLine(to: CGPoint(x: stepX * 190, y: stepY * 35))
+                path.addLine(to: CGPoint(x: middleHorizontal, y: stepY * 30))
             }
+            .stroke()
+            
+            Path { path in
+                path.move(to: CGPoint(x: stepX * 110, y: stepY * 35))
+                path.addLine(to: CGPoint(x: stepX * 85, y: stepY * 80))
+                path.addLine(to: CGPoint(x: stepX * 130, y: stepY * 70))
+                path.addLine(to: CGPoint(x: stepX * 90, y: stepY * 100))
+                path.addLine(to: CGPoint(x: middleHorizontal, y: stepY * 100))
+                path.addLine(to: CGPoint(x: stepX * 130, y: stepY * 70))
+                path.addLine(to: CGPoint(x: stepX * 110, y: stepY * 35))
+            }
+            .stroke()
+            
+            Path { path in
+                path.move(to: CGPoint(x: stepX * 190, y: stepY * 35))
+                path.addLine(to: CGPoint(x: stepX * 215, y: stepY * 80))
+                path.addLine(to: CGPoint(x: stepX * 170, y: stepY * 70))
+                path.addLine(to: CGPoint(x: stepX * 210, y: stepY * 100))
+                path.addLine(to: CGPoint(x: middleHorizontal, y: stepY * 100))
+                path.addLine(to: CGPoint(x: stepX * 170, y: stepY * 70))
+                path.addLine(to: CGPoint(x: stepX * 190, y: stepY * 35))
+            }
+            .stroke()
+            
+            Path { path in
+                path.move(to: CGPoint(x: stepX * 130, y: stepY * 70))
+                path.addLine(to: CGPoint(x: middleHorizontal, y: stepY * 30))
+                path.addLine(to: CGPoint(x: stepX * 170, y: stepY * 70))
+            }
+            .stroke()
+            
+            
         }
     }
 }
-
+            
+            
 struct LeftTopView_Previews: PreviewProvider {
     static var previews: some View {
         CenterTopView()
