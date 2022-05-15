@@ -9,9 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(spacing: 0) {
+        ZStack {
+            LeftFillShapeTopView()
+            RightFillShapeTopView()
             LeftTopView()
+            RightTopView()
         }
+        .frame(width: 320, height: 355)
             .padding()
     }
 }

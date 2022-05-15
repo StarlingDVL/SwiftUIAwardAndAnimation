@@ -30,7 +30,6 @@ struct LeftTopView: View {
                 path.addLine(to: CGPoint(x: middleHorizontal, y: stepY * 10))
             }
             .stroke()
-            .fill(Color.red)
             
             Path { path in
                 path.move(to: CGPoint(x: middleHorizontal, y: stepY * 30))
@@ -43,7 +42,6 @@ struct LeftTopView: View {
                 path.addLine(to: CGPoint(x: stepX * 146, y: stepY * 78))
             }
             .stroke()
-            .fill(Color.green)
             
             Path { path in
                 path.move(to: CGPoint(x: stepX * 113, y: stepY * 15))
@@ -61,7 +59,6 @@ struct LeftTopView: View {
                 path.addLine(to: CGPoint(x: stepX * 100 , y: stepY * 20))
             }
             .stroke()
-            .fill(Color.blue)
             
             Path { path in
                 path.move(to: CGPoint(x: stepX * 126, y: stepY * 36))
@@ -76,7 +73,6 @@ struct LeftTopView: View {
                 path.addLine(to: CGPoint(x: stepX * 88 , y: stepY * 25))
             }
             .stroke()
-            .fill(Color.purple)
             
             Path { path in
                 path.move(to: CGPoint(x: stepX * 70, y: stepY * 37))
@@ -95,7 +91,6 @@ struct LeftTopView: View {
                 path.addLine(to: CGPoint(x: stepX * 47 , y: stepY * 91))
             }
             .stroke()
-            .fill(Color.brown)
             
             Path { path in
                 path.move(to: CGPoint(x: stepX * 45, y: stepY * 108))
@@ -105,7 +100,22 @@ struct LeftTopView: View {
                 path.addLine(to: CGPoint(x: stepX * 59 , y: stepY * 70))
             }
             .stroke()
-            .fill(Color.brown)
+            
+            Path { path in
+                path.move(to: CGPoint(x: stepX * 43, y: stepY * 108))
+                path.addLine(to: CGPoint(x: stepX * 39 , y: stepY * 124))
+                path.addLine(to: CGPoint(x: stepX * 41 , y: stepY * 126))
+                path.addLine(to: CGPoint(x: stepX * 279 , y: stepY * 126 ))
+                path.addLine(to: CGPoint(x: stepX * 281, y: stepY * 124))
+                path.addLine(to: CGPoint(x: stepX * 277 , y: stepY * 108))
+            }
+            .fill(
+                LinearGradient(
+                    colors: [.black, .black, .gray, .black, .black, .gray, .black, .black],
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            )
         }
     }
 }
