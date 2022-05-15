@@ -12,8 +12,11 @@ struct ContentView: View {
         ZStack {
             LeftFillShapeTopView()
             RightFillShapeTopView()
+            LeftBoundAndEarView()
+            RightBoundAndEarView()
             LeftTopView()
             RightTopView()
+            
         }
         .frame(width: 320, height: 355)
             .padding()
