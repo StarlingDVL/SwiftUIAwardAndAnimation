@@ -10,8 +10,6 @@ import SwiftUI
 struct RightSideView: View {
     var body: some View {
         ZStack {
-            RightFillShapeTopView()
-            RightEyeFillView()
             RightLastView()
             RightBoundAndEarView()
             RightEyeView()
