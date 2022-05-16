@@ -11,6 +11,7 @@ struct LeftSideView: View {
     var body: some View {
         ZStack {
             LeftFillShapeTopView()
+            LeftLastView()
             LeftBoundAndEarView()
             LeftEyeView()
             LeftBottomView()
@@ -23,5 +24,6 @@ struct LeftSideView: View {
 struct LeftSideView_Previews: PreviewProvider {
     static var previews: some View {
         LeftSideView()
+            .frame(width: 320, height: 355)
     }
 }

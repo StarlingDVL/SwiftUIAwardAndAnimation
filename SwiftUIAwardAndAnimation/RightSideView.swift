@@ -11,10 +11,12 @@ struct RightSideView: View {
     var body: some View {
         ZStack {
             RightFillShapeTopView()
+            RightLastView()
             RightBoundAndEarView()
             RightEyeView()
             RightBottomView()
             RightTopView()
+            RightMouthView()
         }
     }
 }
