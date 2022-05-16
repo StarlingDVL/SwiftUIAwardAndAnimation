@@ -16,6 +16,7 @@ struct ContentView: View {
             RightBoundAndEarView()
             LeftEyeView()
             RightEyeView()
+            LeftBottomView()
             LeftTopView()
             RightTopView()
             
