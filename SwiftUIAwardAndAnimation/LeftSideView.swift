@@ -11,6 +11,7 @@ struct LeftSideView: View {
     var body: some View {
         ZStack {
             LeftFillShapeTopView()
+            LeftEyeFillView()
             LeftLastView()
             LeftBoundAndEarView()
             LeftEyeView()

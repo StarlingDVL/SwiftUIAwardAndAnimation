@@ -27,6 +27,8 @@
 		2B56D43728329F8D00650FFB /* RightMouthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D43628329F8D00650FFB /* RightMouthView.swift */; };
 		2B56D4392832A39500650FFB /* LeftLastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D4382832A39500650FFB /* LeftLastView.swift */; };
 		2B56D43B2832BFCE00650FFB /* RightLastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D43A2832BFCE00650FFB /* RightLastView.swift */; };
+		2B56D43D2832C3BC00650FFB /* LeftEyeFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D43C2832C3BC00650FFB /* LeftEyeFillView.swift */; };
+		2B56D43F2832D24700650FFB /* RightEyeFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D43E2832D24700650FFB /* RightEyeFillView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		2B56D43628329F8D00650FFB /* RightMouthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMouthView.swift; sourceTree = "<group>"; };
 		2B56D4382832A39500650FFB /* LeftLastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftLastView.swift; sourceTree = "<group>"; };
 		2B56D43A2832BFCE00650FFB /* RightLastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightLastView.swift; sourceTree = "<group>"; };
+		2B56D43C2832C3BC00650FFB /* LeftEyeFillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftEyeFillView.swift; sourceTree = "<group>"; };
+		2B56D43E2832D24700650FFB /* RightEyeFillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightEyeFillView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				2B56D43628329F8D00650FFB /* RightMouthView.swift */,
 				2B56D4382832A39500650FFB /* LeftLastView.swift */,
 				2B56D43A2832BFCE00650FFB /* RightLastView.swift */,
+				2B56D43C2832C3BC00650FFB /* LeftEyeFillView.swift */,
+				2B56D43E2832D24700650FFB /* RightEyeFillView.swift */,
 				2B0AC413283031B90054025C /* Assets.xcassets */,
 				2B0AC415283031B90054025C /* Preview Content */,
 			);
@@ -197,6 +203,8 @@
 				2B0AC41E283032DB0054025C /* LeftTopView.swift in Sources */,
 				2B092B57283125BB0077038C /* RightTopView.swift in Sources */,
 				2B56D43328328DD900650FFB /* LeftSideView.swift in Sources */,
+				2B56D43F2832D24700650FFB /* RightEyeFillView.swift in Sources */,
+				2B56D43D2832C3BC00650FFB /* LeftEyeFillView.swift in Sources */,
 				2B0AC412283031B70054025C /* ContentView.swift in Sources */,
 				2B092B5B283136E50077038C /* RightFillShapeTopView.swift in Sources */,
 				2B0AC410283031B70054025C /* SwiftUIAwardAndAnimationApp.swift in Sources */,
