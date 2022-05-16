@@ -32,6 +32,8 @@
 		2B56D4412832D6EF00650FFB /* LeftNoseFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D4402832D6EF00650FFB /* LeftNoseFillView.swift */; };
 		2B56D4432832E36D00650FFB /* FillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D4422832E36D00650FFB /* FillsView.swift */; };
 		2B56D4452832E43400650FFB /* RightNoseFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D4442832E43400650FFB /* RightNoseFillView.swift */; };
+		2B56D4472832E6F700650FFB /* LeftBottomFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D4462832E6F700650FFB /* LeftBottomFillView.swift */; };
+		2B56D4492832FFC600650FFB /* RightBottomFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D4482832FFC600650FFB /* RightBottomFillView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		2B56D4402832D6EF00650FFB /* LeftNoseFillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftNoseFillView.swift; sourceTree = "<group>"; };
 		2B56D4422832E36D00650FFB /* FillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillsView.swift; sourceTree = "<group>"; };
 		2B56D4442832E43400650FFB /* RightNoseFillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightNoseFillView.swift; sourceTree = "<group>"; };
+		2B56D4462832E6F700650FFB /* LeftBottomFillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBottomFillView.swift; sourceTree = "<group>"; };
+		2B56D4482832FFC600650FFB /* RightBottomFillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBottomFillView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 			children = (
 				2B0AC40F283031B70054025C /* SwiftUIAwardAndAnimationApp.swift */,
 				2B0AC411283031B70054025C /* ContentView.swift */,
+				2B56D4462832E6F700650FFB /* LeftBottomFillView.swift */,
+				2B56D4482832FFC600650FFB /* RightBottomFillView.swift */,
 				2B56D43228328DD900650FFB /* LeftSideView.swift */,
 				2B56D43428328E4500650FFB /* RightSideView.swift */,
 				2B0AC41D283032DB0054025C /* LeftTopView.swift */,
@@ -221,7 +227,9 @@
 				2B0AC410283031B70054025C /* SwiftUIAwardAndAnimationApp.swift in Sources */,
 				2B56D4392832A39500650FFB /* LeftLastView.swift in Sources */,
 				2B092B5D283144CF0077038C /* LeftBoundAndEarView.swift in Sources */,
+				2B56D4472832E6F700650FFB /* LeftBottomFillView.swift in Sources */,
 				2B56D4452832E43400650FFB /* RightNoseFillView.swift in Sources */,
+				2B56D4492832FFC600650FFB /* RightBottomFillView.swift in Sources */,
 				2B56D4312832861100650FFB /* RightBottomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

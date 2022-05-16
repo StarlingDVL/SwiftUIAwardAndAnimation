@@ -209,8 +209,8 @@ struct LeftBottomView: View {
                 RadialGradient(
                     colors: [.white, .black],
                     center: .init(x: stepX * 114 / width, y: stepY * 322 / height),
-                    startRadius: 1 ,
-                    endRadius: 25
+                    startRadius: stepX ,
+                    endRadius: stepY * 25
                 )
             )
         }

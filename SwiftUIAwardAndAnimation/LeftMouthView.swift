@@ -19,7 +19,6 @@ struct LeftMouthView: View {
             let stepX = width / gridX
             let stepY = height / gridY
             
-            
             let middleHorizontal = width / 2
             
             Path { path in

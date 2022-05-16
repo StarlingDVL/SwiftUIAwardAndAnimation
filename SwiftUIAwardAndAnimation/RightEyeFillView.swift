@@ -34,8 +34,8 @@ struct RightEyeFillView: View {
                 RadialGradient(
                     colors: [.gray, .black],
                     center: .init(x: stepX * 225 / width, y: stepY * 135 / height),
-                    startRadius: 1,
-                    endRadius: 40
+                    startRadius: stepX,
+                    endRadius: stepY * 40
                 )
             )
             

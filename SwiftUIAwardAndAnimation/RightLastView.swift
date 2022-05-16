@@ -19,7 +19,6 @@ struct RightLastView: View {
             let stepX = width / gridX
             let stepY = height / gridY
             
-            
             let middleHorizontal = width / 2
             
             Path { path in
@@ -100,7 +99,11 @@ struct RightLastView: View {
                 path.addLine(to: CGPoint(x: middleHorizontal, y: stepY * 336))
             }
             .fill(
-                LinearGradient(colors: [.gray,.black,], startPoint: .init(x: middleHorizontal, y: stepY * 271 / height), endPoint: .init(x: middleHorizontal, y: stepY * 336 / height))
+                LinearGradient(
+                    colors: [.gray,.black,],
+                    startPoint: .init(x: middleHorizontal, y: stepY * 271 / height),
+                    endPoint: .init(x: middleHorizontal, y: stepY * 336 / height)
+                )
             )
             
             Path { path in
@@ -190,7 +193,6 @@ struct RightLastView: View {
                 path.addLine(to: CGPoint(x: stepX * 180, y: stepY * 324))
             }
             .stroke()
-            
         }
     }
 }

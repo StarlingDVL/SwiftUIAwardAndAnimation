@@ -16,6 +16,8 @@ struct FillsView: View {
             RightEyeFillView()
             LeftNoseFillView()
             RightNoseFillView()
+            LeftBottomFillView()
+            RightBottomFillView()
         }
     }
 }

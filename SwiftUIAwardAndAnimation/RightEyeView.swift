@@ -250,7 +250,6 @@ struct RightEyeView: View {
                 path.addLine(to: CGPoint(x: stepX * 241, y: stepY * 244))
             }
             .stroke()
-            
         }
     }
 }

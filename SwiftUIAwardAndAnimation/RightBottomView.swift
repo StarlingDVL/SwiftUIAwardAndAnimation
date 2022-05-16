@@ -209,11 +209,10 @@ struct RightBottomView: View {
                 RadialGradient(
                     colors: [.white, .black],
                     center: .init(x: stepX * 206 / width, y: stepY * 322 / height),
-                    startRadius: 1 ,
-                    endRadius: 25
+                    startRadius: stepX ,
+                    endRadius: stepY * 25
                 )
             )
-            
         }
     }
 }

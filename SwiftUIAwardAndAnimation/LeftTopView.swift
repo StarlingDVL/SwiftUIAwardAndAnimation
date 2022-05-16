@@ -19,7 +19,6 @@ struct LeftTopView: View {
             let stepX = width / gridX
             let stepY = height / gridY
             
-            
             let middleHorizontal = width / 2
             
             Path { path in
@@ -111,7 +110,16 @@ struct LeftTopView: View {
             }
             .fill(
                 LinearGradient(
-                    colors: [.black, .black, .gray, .black, .black, .gray, .black, .black],
+                    colors: [
+                        .black,
+                        .black,
+                        .gray,
+                        .black,
+                        .black,
+                        .gray,
+                        .black,
+                        .black
+                    ],
                     startPoint: .leading,
                     endPoint: .trailing
                 )
