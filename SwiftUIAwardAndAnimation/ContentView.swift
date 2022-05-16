@@ -10,17 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            LeftFillShapeTopView()
-            RightFillShapeTopView()
-            LeftBoundAndEarView()
-            RightBoundAndEarView()
-            LeftEyeView()
-            RightEyeView()
-            LeftBottomView()
-            RightBottomView()
-            LeftTopView()
-            RightTopView()
-            
+            LeftSideView()
+            RightSideView()
         }
         .frame(width: 320, height: 355)
             .padding()
