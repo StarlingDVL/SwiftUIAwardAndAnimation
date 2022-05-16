@@ -19,8 +19,6 @@ struct LeftBottomView: View {
             let stepX = width / gridX
             let stepY = height / gridY
             
-            let middleHorizontal = width / 2
-            
             Path { path in
                 path.move(to: CGPoint(x: stepX * 56, y: stepY * 273))
                 path.addLine(to: CGPoint(x: stepX * 65, y: stepY * 291))
