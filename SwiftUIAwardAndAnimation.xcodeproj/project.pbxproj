@@ -34,6 +34,8 @@
 		2B56D4452832E43400650FFB /* RightNoseFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D4442832E43400650FFB /* RightNoseFillView.swift */; };
 		2B56D4472832E6F700650FFB /* LeftBottomFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D4462832E6F700650FFB /* LeftBottomFillView.swift */; };
 		2B56D4492832FFC600650FFB /* RightBottomFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D4482832FFC600650FFB /* RightBottomFillView.swift */; };
+		2B56D44B28330ABE00650FFB /* FullAwardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B56D44A28330ABE00650FFB /* FullAwardView.swift */; };
+		2BDDD793283558E400F44386 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDDD792283558E400F44386 /* SwitchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,8 @@
 		2B56D4442832E43400650FFB /* RightNoseFillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightNoseFillView.swift; sourceTree = "<group>"; };
 		2B56D4462832E6F700650FFB /* LeftBottomFillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftBottomFillView.swift; sourceTree = "<group>"; };
 		2B56D4482832FFC600650FFB /* RightBottomFillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightBottomFillView.swift; sourceTree = "<group>"; };
+		2B56D44A28330ABE00650FFB /* FullAwardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullAwardView.swift; sourceTree = "<group>"; };
+		2BDDD792283558E400F44386 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		2B0AC40E283031B70054025C /* SwiftUIAwardAndAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				2BDDD792283558E400F44386 /* SwitchView.swift */,
 				2B0AC40F283031B70054025C /* SwiftUIAwardAndAnimationApp.swift */,
 				2B0AC411283031B70054025C /* ContentView.swift */,
+				2B56D44A28330ABE00650FFB /* FullAwardView.swift */,
 				2B56D4462832E6F700650FFB /* LeftBottomFillView.swift */,
 				2B56D4482832FFC600650FFB /* RightBottomFillView.swift */,
 				2B56D43228328DD900650FFB /* LeftSideView.swift */,
@@ -209,6 +215,7 @@
 				2B56D4272831681200650FFB /* LeftEyeView.swift in Sources */,
 				2B56D42F283285BE00650FFB /* LeftMouthView.swift in Sources */,
 				2B56D42B28325F8D00650FFB /* LeftBottomView.swift in Sources */,
+				2B56D44B28330ABE00650FFB /* FullAwardView.swift in Sources */,
 				2B092B59283128F30077038C /* LeftFillShapeTopView.swift in Sources */,
 				2B092B5F283159D70077038C /* RightBoundAndEarView.swift in Sources */,
 				2B56D43B2832BFCE00650FFB /* RightLastView.swift in Sources */,
@@ -228,6 +235,7 @@
 				2B56D4392832A39500650FFB /* LeftLastView.swift in Sources */,
 				2B092B5D283144CF0077038C /* LeftBoundAndEarView.swift in Sources */,
 				2B56D4472832E6F700650FFB /* LeftBottomFillView.swift in Sources */,
+				2BDDD793283558E400F44386 /* SwitchView.swift in Sources */,
 				2B56D4452832E43400650FFB /* RightNoseFillView.swift in Sources */,
 				2B56D4492832FFC600650FFB /* RightBottomFillView.swift in Sources */,
 				2B56D4312832861100650FFB /* RightBottomView.swift in Sources */,
