@@ -26,13 +26,17 @@ struct SwitchView: View {
             Text("\(isOn ? "Hide" : "Show")")
                 .foregroundColor(.red)
                 .font(.title)
-                .offset(x: isOn ? -30 : 30)
+                .offset(
+                    x: isOn
+                    ? UIScreen.main.bounds.width * -0.085
+                    : UIScreen.main.bounds.width * 0.085)
             Circle()
                 .fill(.red)
                 .frame(width: 40, height: 40)
-                .offset( x: isOn
-                         ? UIScreen.main.bounds.width * 0.130
-                         : UIScreen.main.bounds.width * -0.130
+                .offset(
+                    x: isOn
+                    ? UIScreen.main.bounds.width * 0.130
+                    : UIScreen.main.bounds.width * -0.130
                 )
                 .onTapGesture {
                     toggleSwitch()
