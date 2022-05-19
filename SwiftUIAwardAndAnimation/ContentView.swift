@@ -22,7 +22,12 @@ struct ContentView: View {
                 .scaleEffect(CGSize(width: xScale, height: yScale))
                 .offset(y: yOffset)
             VStack {
-                SwitchView(isOn: $showAward, scaleX: $xScale, scaleY: $yScale, offsetY: $yOffset)
+                SwitchView(
+                    isOn: $showAward,
+                    scaleX: $xScale,
+                    scaleY: $yScale,
+                    offsetY: $yOffset
+                )
                 Spacer()
             }
         }
